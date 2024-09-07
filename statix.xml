@@ -6,6 +6,10 @@
           fetch="https://github.com/StatiXOS"
           revision="udc" />
 
+  <remote name="saosp"
+          fetch="https://github.com/SimpleAOSP"
+          revision="15" />
+
   <remote name="caf"
           fetch="https://git.codelinaro.org/clo/la"
           revision="refs/tags/LA.QSSI.14.0.r1-15100-qssi.0" />
@@ -18,11 +22,19 @@
           fetch="https://github.com/"
           revision="udc" />
 
+  <remote name="gitlab"
+          fetch="https://gitlab.com/"
+          revision="fifteen" />
+
   <!-- Statix -->
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr3" />
-  <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" revision="udc-qpr3" />
+  <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="github" revision="lineage-21.0" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" revision="udc-qpr3" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" revision="udc-qpr3" />
+  <project path="system/qcom" name="LineageOS/android_system_qcom" remote="github" revision="lineage-21" />
+  <project path="hardware/motorola" name="sarthakroy2002/android_hardware_motorola" remote="github" revision="lineage-21" />
+  <project path="vendor/SystemUIClocks" name="sarthakroy2002/vendor_SystemUIClocks" remote="github" revision="main" />
+  <project path="vendor/partner_gms" name="cyberknight777/android_vendor_gms" remote="gitlab" />
 
   <!-- ANT -->
   <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" remote="caf_vendor" revision="refs/tags/LA.UM.9.2.c25-02200-SDMxx0.0" />
@@ -74,7 +86,7 @@
   <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="tm-caf-sdm845" remote="statix" />
   <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="udc-caf-sdm845" remote="statix"  />
   <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="tm-caf-sdm845" remote="statix" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="tm-caf-sm8150" remote="statix" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="udc-caf-sm8150" remote="statix" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="udc-caf-sm8150" remote="statix"  />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="tm-caf-sm8150" remote="statix" />
   <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" revision="udc-caf-sm8250" remote="statix" />
